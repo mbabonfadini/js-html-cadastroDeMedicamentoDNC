@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de medicamentos</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="principal">
+        <nav class="principalNavegacao">
+            <a href="#" class="pnItem">Home</a>
+            <a href="#" class="pnItem">Cadastro de Medicamentos</a>
+            <a href="#" class="pnItem">Cadastro de Vacinas</a>
+            <a href="#" class="pnItem">Cadastro de Cosméticos</a>
+        </nav>
+        <div class="principalTitulo">
+            <img src="img/medicamento.svg" alt="Medicamento" class="ptImg">
+            <div class="ptTexto">
+                <h1 class="pttTitulo">Cadastro de Medicamentos</h1>
+                <h3 class="pttSubTitulo">Farmácia da Gente</h3>
+            </div>
+        </div>
+    </header>
+
+    <main class="medicamentos">
+        <div class="form formDados">
+                <label for="" class="etiqueta">Nome do Medicamento</label>
+                <input type="text" name="" id="nome" class="dados">
+                <label for="" class="etiqueta">Quantidade Disponível</label>
+                <input type="text" name="" id="qtd" class="dados">
+                <label for="" class="etiqueta">Classe de Medicamento</label>
+                <input type="text" name="" id="classe" class="dados">
+                <button onclick="produto.Adicionar()" class="formButton">Cadastrar</button>
+
+        </div>
+        <div class="tabela">
+            <table class="tabelaProdutos">
+                <thead class="tabelaProdutosCabecalho">
+                    <tr>
+                       <th>ID</th>
+                       <th>Medicamento</th>
+                       <th>Quantidade</th>
+                       <th>Classe de Medicamento</th>
+                       <th>Remover</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody" class="tabelaProdutosCabecalho">
+                    <!-- <td class="tabelaProdutosValor"></td> -->
+                    
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
