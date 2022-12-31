@@ -93,5 +93,4 @@ class Produto {
 
 var produto = new Produto()
 
-console.log(produto.LerDados())
 
